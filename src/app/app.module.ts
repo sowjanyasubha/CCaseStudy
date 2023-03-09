@@ -13,7 +13,8 @@ import { ProductComponent } from './components/common/product/product.component'
 import { OrderComponent } from './components/common/order/order.component';
 import { FakeBackendProvider } from './providers/FakeBackendProvider';
 import { HttpService } from './services/HTTPService';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,9 @@ import { HttpService } from './services/HTTPService';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [
     HttpService,
